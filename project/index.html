@@ -1,0 +1,71 @@
+<html>
+    <head>
+    <meta charset="utf-8"/>
+        <style type="text/css">
+        nstyle{
+            color:#ffffff; 
+            background-color:#000000;
+            font-family: 휴먼굵은샘체;
+            font-size: 30px;
+        }
+        </style>
+    </head>
+<script language="javascript">
+today = new Date()
+var week = new Array('일', '월', '화', '수', '목', '금', '토');
+document.write("오늘은 ",
+today.getFullYear(), "년 ",
+today.getMonth()+1, "월 ",
+today.getDate(), "일 ",
+week[today.getDay()], "요일입니다.")
+
+function time() {
+var time = new Date(); 
+// 시간받기위해서 new date
+document.getElementById("now").innerHTML = time.getHours() + "시" + time.getMinutes() + "분" + time.getSeconds() + "초";
+setInterval("time()", 1000);     
+// 1초 지난후 time()실행
+    }
+</script>
+</head>
+
+<body onload="time()">
+    <h2> 현재 시간: <span id="now"></span></h2>
+    <body><center></center>
+
+        <div id = "notice">
+            <ul>
+                <nstyle>
+           <h2><font color="#FFFFFF"><SPAN STYLE="background-color:#000000;"><공지사항></SPAN></h2>
+           <li><h2><marquee><font color="#FFFFFF"><SPAN STYLE="background-color:#000000;">사이트를 방문해주신 모든 분들 환영합니다.</SPAN></h2></font></marquee></li> 
+                    <style type="text/css">
+                        div
+                        {
+                            background-image: url(image/도서관1.jpg);
+                            width: auto;
+                            height: auto;
+                        }
+                        </style>
+                    <body bgcolor="#fffafa">               
+                        <div id = "menu">
+                            <ul>  
+                
+            <li><a href = "koreaweather.html" target="right" align="center"><h2><font color="#FFFFFF"><SPAN STYLE="background-color:#da1111;">오늘의 날씨</SPAN></h2></a></li>
+            <li><a href = "koreamap.html" target="right" align="center"><h2><font color="#FFFFFF"><SPAN STYLE="background-color:#c97220;">지도</SPAN></h2></a></li>
+            <li><a href = "koreafood.html" target="right" align="center"><h2><font color="#FFFFFF"><SPAN STYLE="background-color:#e4e728;">음식점</SPAN></h2></a></li>
+            <li><a href = "koreahospital.html" target="right" align="center"><h2><font color="#FFFFFF"><SPAN STYLE="background-color:#3aca27;">병원</SPAN></h2></a></li>
+            <li><a href = "dictionary.html" target="right" align="center"><h2><font color="#FFFFFF"><SPAN STYLE="background-color:#1d3faf;">어학 사전</SPAN></h2></a></li>
+            <li><a href = "library.html" target="right" align="center"><h2><font color="#FFFFFF"><SPAN STYLE="background-color:#340d72;">온라인 서점</SPAN></h2></a></li>
+            <li><a href = "koreainformation.html" target="right" align="center"><h2><font color="#FFFFFF"><SPAN STYLE="background-color:#533d8f;">4대 보험</SPAN></h2></a></li>
+            <li><a href = "koreainternet.html" target="right" align="center"><h2><font color="#FFFFFF"><SPAN STYLE="background-color:#1b7c8d;">정부24 인터넷 정부 서비스 포털</SPAN></h2></a></li>
+            <li><a href = "koreaopeninformation.html" target="right" align="center"><h2><font color="#FFFFFF"><SPAN STYLE="background-color:#ad3175;">정부 행정 서비스 포털</SPAN></h2></a></li>
+            <li><a href = "koreabluehouse.html" target="right" align="center"><h2><font color="#FFFFFF"><SPAN STYLE="background-color:#1d7a14;">청와대 국민청원</SPAN></h2></a></li>
+            <li><a href = "koreapeople.html" target="right" align="center" ><h2><font color="#FFFFFF"><SPAN STYLE="background-color:#0d2c53;">국민 신문고</SPAN></h2></a></li>
+            <li><a href = "todayexchange.html" target="right" align="center"><h2><font color="#FFFFFF"><SPAN STYLE="background-color:#000000;">오늘의 환율</SPAN></h2></a></li>
+            <li><a href = "php/index.php" target="_blank" align="center"><h2><font color="#FFFFFF"><SPAN STYLE="background-color:#da1111;">나의 DB 글쓰기, 검색, 업데이트, 삭제 view - 나의 DB 메모-MySQL DB 연동</SPAN></h2></a></li>
+                        </ul>
+                </nstyle>
+            </ul>
+        </div>
+    </body>
+</html>
